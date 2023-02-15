@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flywitter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="cabecalho">
+        <figure class="cabecalho__logo">
+          <img src="/img/bird.png" alt="Logo" />
+          <figcaption hidden>Logo</figcaption>
+        </figure>
+
+        <nav class="cabecalho__menuNavegacao">
+          <ul class="cabecalho__menuLista">
+            <li class="cabecalho__menuItem">
+              <img src="img/Home.png" alt="Página Inicial" />
+              <a href="">Página Inicial</a>
+            </li>
+            <li class="cabecalho__menuItem">
+              <img src="img/Hashtag.png" alt="Explorar" />
+              <a href="">Explorar</a>
+            </li>
+            <li class="cabecalho__menuItem">
+              <img src="img/Notification.png" alt="Notificações" />
+              <a href="">Notificações</a>
+            </li>
+            <li class="cabecalho__menuItem">
+              <img src="img/Group.png" alt="Mensagens" />
+              <a href="">Mensagens</a>
+            </li>
+            <li class="cabecalho__menuItem">
+              <img src="img/Group(1).png" alt="Itens Salvos" />
+              <a href="">Itens Salvos</a>
+            </li>
+            <li class="cabecalho__menuItem">
+              <img src="img/Group(2).png" alt="Listas" />
+              <a href="">Listas</a>
+            </li>
+            <li class="cabecalho__menuItem">
+              <img id="perfil" src="img/ProfilePic.png" alt="Perfil" />
+              <a href="">Perfil</a>
+            </li>
+            <li class="cabecalho__menuItem">
+              <img src="img/Group(3).png" alt="Mais" />
+              <a href="">Mais</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="conteudoPrincipal">
+        <h3 class="conteudoPrincipal__titulo">Home</h3>
+
+        <form action="#" class="conteudoPrincipal__formulario">
+          <textarea
+            name="textpost"
+            placeholder="O que está acontecendo?"
+          ></textarea>
+          <button type="submit">Postar</button>
+        </form>
+
+        <section class="conteudoPrincipal__feed">
+          <ul class="conteudoPrincipal__listaPosts">
+            <li class="conteudoPrincipal__post">
+              <img
+                class="post__fotoPerfil"
+                src="img/ProfilePic.png"
+                alt="Eric Bortoleto"
+              />
+              <div class="post__conteudo">
+                <h2>James Folk</h2>
+                <span>@jamesfolk 14s</span>
+                <p>What's up?</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
